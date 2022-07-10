@@ -19,8 +19,8 @@ var blocklist = [
 ];
 
 var allowlist = [
-    "cutefish-launcher cutefish-launcher",
-    "cutefish-screenshot cutefish-screenshot"
+    "pisces-launcher pisces-launcher",
+    "pisces-screenshot pisces-screenshot"
 ];
 
 function isPopupWindow(window) {
@@ -72,10 +72,10 @@ function isPopupWindow(window) {
     return false;
 }
 
-var cutefishPopupsEffect = {
+var piscesPopupsEffect = {
     loadConfig: function () {
-        cutefishPopupsEffect.fadeInDuration = animationTime(100);
-        cutefishPopupsEffect.fadeOutDuration = animationTime(100) * 4;
+        piscesPopupsEffect.fadeInDuration = animationTime(100);
+        piscesPopupsEffect.fadeOutDuration = animationTime(100) * 4;
     },
     slotWindowAdded: function (window) {
         if (effects.hasActiveFullScreenEffect) {
@@ -93,7 +93,7 @@ var cutefishPopupsEffect = {
         window.fadeInAnimation = animate({
             window: window,
             curve: QEasingCurve.Linear,
-            duration: cutefishPopupsEffect.fadeInDuration,
+            duration: piscesPopupsEffect.fadeInDuration,
             type: Effect.Opacity,
             from: 0.0,
             to: 1.0
@@ -115,7 +115,7 @@ var cutefishPopupsEffect = {
         window.fadeOutAnimation = animate({
             window: window,
             curve: QEasingCurve.OutQuart,
-            duration: cutefishPopupsEffect.fadeOutDuration,
+            duration: piscesPopupsEffect.fadeOutDuration,
             type: Effect.Opacity,
             from: 1.0,
             to: 0.0
@@ -135,13 +135,13 @@ var cutefishPopupsEffect = {
         }
     },
     init: function () {
-        cutefishPopupsEffect.loadConfig();
+        piscesPopupsEffect.loadConfig();
 
-        effect.configChanged.connect(cutefishPopupsEffect.loadConfig);
-        effects.windowAdded.connect(cutefishPopupsEffect.slotWindowAdded);
-        effects.windowClosed.connect(cutefishPopupsEffect.slotWindowClosed);
-        effects.windowDataChanged.connect(cutefishPopupsEffect.slotWindowDataChanged);
+        effect.configChanged.connect(piscesPopupsEffect.loadConfig);
+        effects.windowAdded.connect(piscesPopupsEffect.slotWindowAdded);
+        effects.windowClosed.connect(piscesPopupsEffect.slotWindowClosed);
+        effects.windowDataChanged.connect(piscesPopupsEffect.slotWindowDataChanged);
     }
 };
 
-cutefishPopupsEffect.init();
+piscesPopupsEffect.init();

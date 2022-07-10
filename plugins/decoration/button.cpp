@@ -61,7 +61,7 @@ void Button::paint(QPainter *painter, const QRect &repaintRegion)
 {
     Q_UNUSED(repaintRegion)
 
-    Cutefish::Decoration *decoration = qobject_cast<Cutefish::Decoration *>(this->decoration());
+    Pisces::Decoration *decoration = qobject_cast<Pisces::Decoration *>(this->decoration());
 
     if (!decoration)
         return;

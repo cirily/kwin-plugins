@@ -5,8 +5,8 @@ function forceFullScreen(client) {
 }
 
 function setupConnection(client) {
-    if (client.resourceClass != "cutefish-launcher"
-            || client.resourceName != "cutefish-launcher" || client.dialog) {
+    if (client.resourceClass != "pisces-launcher"
+            || client.resourceName != "pisces-launcher" || client.dialog) {
         return;
     }
 

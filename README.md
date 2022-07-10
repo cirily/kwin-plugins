@@ -18,4 +18,4 @@ sudo make install
 
 ## License
 
-cutefish-kwin-plugins is licensed under GPLv3.
+pisces-kwin-plugins is licensed under GPLv3.

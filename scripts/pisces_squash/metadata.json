@@ -9,9 +9,9 @@
         "Category": "Appearance",
         "EnabledByDefault": true,
         "Icon": "preferences-system-windows-effect-squash",
-        "Id": "cutefish_squash",
+        "Id": "pisces_squash",
         "License": "GPL",
-        "Name": "CutefishSquash",
+        "Name": "PiscesSquash",
         "ServiceTypes": [
             "KWin/Effect"
         ],
